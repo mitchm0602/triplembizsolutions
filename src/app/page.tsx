@@ -60,47 +60,44 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="border-b border-navy/10 bg-cream">
-        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8 lg:py-28">
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-steel-dark">
-                For Construction & Trade Companies
-              </p>
-              <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-navy sm:text-5xl lg:text-6xl">
-                We Build Your Back Office &mdash; So You Can Run the Job.
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-navy/70">
-                Triple M Business Solutions is an embedded operations partner
-                for small construction and trade businesses. We set up and
-                run the bookkeeping, HR, compliance, and insurance
-                infrastructure you need &mdash; without the cost of a full
-                internal back office.
-              </p>
-              <div className="mt-10 flex flex-wrap gap-4">
-                <Link
-                  href="/contact"
-                  className="rounded-md bg-navy px-7 py-3.5 text-base font-semibold text-cream transition-colors hover:bg-navy-light"
-                >
-                  Book a Consultation
-                </Link>
-                <Link
-                  href="/services"
-                  className="rounded-md border border-navy/20 px-7 py-3.5 text-base font-semibold text-navy transition-colors hover:bg-mist"
-                >
-                  Explore Services
-                </Link>
-              </div>
-            </div>
-            <div className="relative aspect-4/5 overflow-hidden rounded-2xl lg:order-last">
-              <Image
-                src="/images/homepage-hero.jpg"
-                alt="A contractor reviewing project financials on a tablet at a job site"
-                fill
-                priority
-                className="object-cover"
-                sizes="(min-width: 1024px) 40vw, 100vw"
-              />
+      <section className="relative isolate overflow-hidden border-b border-navy/10">
+        <Image
+          src="/images/hero-bg.jpg"
+          alt="A residential home under construction at sunrise"
+          fill
+          priority
+          className="object-cover object-center grayscale-[55%] brightness-[0.55]"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-navy/50" />
+        <div className="relative mx-auto max-w-6xl px-6 py-24 lg:px-8 lg:py-32">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-widest text-steel-light">
+              For Construction & Trade Companies
+            </p>
+            <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-cream sm:text-5xl lg:text-6xl">
+              We Build Your Back Office &mdash; So You Can Run the Job.
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cream/80">
+              Triple M Business Solutions is an embedded operations partner
+              for small construction and trade businesses. We set up and run
+              the bookkeeping, HR, compliance, and insurance infrastructure
+              you need &mdash; without the cost of a full internal back
+              office.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="rounded-md bg-cream px-7 py-3.5 text-base font-semibold text-navy transition-colors hover:bg-white"
+              >
+                Book a Consultation
+              </Link>
+              <Link
+                href="/services"
+                className="rounded-md border border-cream/40 px-7 py-3.5 text-base font-semibold text-cream transition-colors hover:bg-cream/10"
+              >
+                Explore Services
+              </Link>
             </div>
           </div>
         </div>
