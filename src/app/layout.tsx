@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Triple M Business Solutions",
   },
   description:
-    "Bookkeeping, QuickBooks Online organization, and back-office infrastructure for small construction and trade companies. QBO Certified, OSHA 30 Certified.",
+    "Bookkeeping, QuickBooks Online organization, and back-office infrastructure for small construction and trade companies — from single projects to fractional COO-level oversight. QBO Certified, OSHA 30 Certified.",
 };
 
 export default function RootLayout({

@@ -131,6 +131,9 @@ export default function Home() {
               You&rsquo;re great at the work. The back office shouldn&rsquo;t
               be what holds you back.
             </h2>
+            <p className="mt-4 text-sm font-semibold uppercase tracking-wide text-steel-dark">
+              Bookkeeper. HR Lead. Fractional COO. Whatever the job needs.
+            </p>
           </div>
           <div className="space-y-4 text-navy/70">
             <p>
@@ -142,8 +145,10 @@ export default function Home() {
             </p>
             <p>
               Triple M steps in as your embedded operations partner &mdash;
-              not a distant advisor who hands you a report and disappears,
-              but someone who builds the systems and runs them alongside you.
+              think fractional COO for the back office, without the
+              full-time executive price tag &mdash; not a distant advisor
+              who hands you a report and disappears, but someone who builds
+              the systems and runs them alongside you.
             </p>
           </div>
         </div>
@@ -238,6 +243,12 @@ export default function Home() {
                 construction industry and 10+ years of business consulting
                 experience, Triple M exists to give small trade businesses
                 the same infrastructure the big players have.
+              </p>
+              <p className="mt-4 leading-relaxed text-cream/70">
+                For some clients that looks like a fractional COO handling
+                strategy and oversight end-to-end. For others it&rsquo;s
+                just getting the books finally under control. Either way,
+                it&rsquo;s the same hands-on standard.
               </p>
               <Link
                 href="/about"

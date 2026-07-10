@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The story behind Triple M Business Solutions — a construction background, a consulting background, and a family-driven brand.",
+    "The story behind Triple M Business Solutions — a construction background, a consulting background, fractional COO-level experience, and a family-driven brand.",
 };
 
 const credentials = [
@@ -115,8 +115,8 @@ export default function AboutPage() {
               Triple M doesn&rsquo;t hand over a report and step back. The
               work is to build the systems &mdash; bookkeeping, HR,
               insurance, bonding &mdash; and then run them alongside the
-              business, the way an internal back-office hire would, at a
-              fraction of the cost.
+              business, the way an internal back-office hire (or a
+              fractional COO) would, at a fraction of the cost.
             </p>
             <p className="mt-4 leading-relaxed text-cream/70">
               And Triple M is upfront about what it isn&rsquo;t: not a CPA,

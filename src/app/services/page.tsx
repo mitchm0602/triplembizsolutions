@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Bookkeeping & QBO, HR & compliance, insurance & bonding, and financial strategy services for small construction and trade companies.",
+    "Bookkeeping & QBO, HR & compliance, insurance & bonding, and financial strategy services for small construction and trade companies — from single projects to fractional COO-level oversight.",
 };
 
 type Service = {
@@ -146,8 +146,10 @@ export default function ServicesPage() {
             Everything your back office needs, organized into four pillars.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-navy/70">
-            Every service below can stand alone as a one-off project, or come
-            together under a monthly retainer. See our{" "}
+            Whether you need someone acting as a fractional COO across all
+            of it, or just one piece handled well, every service below can
+            stand alone as a one-off project, or come together under a
+            monthly retainer. See our{" "}
             <Link
               href="/pricing"
               className="font-semibold text-steel-dark hover:text-steel"

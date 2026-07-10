@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pricing & Engagement Model",
   description:
-    "Diagnostic assessments, one-off projects, hourly support, tiered monthly retainers, and seasonal compliance packages.",
+    "Diagnostic assessments, one-off projects, hourly support, tiered monthly retainers from bookkeeping to fractional COO-level oversight, and seasonal compliance packages.",
 };
 
 const retainerTiers = [
@@ -29,7 +29,7 @@ const retainerTiers = [
   {
     name: "Full Infrastructure",
     description:
-      "The full embedded back office — insurance, bonding, and tax strategy included.",
+      "The full embedded back office — insurance, bonding, and tax strategy included, with fractional COO-level oversight.",
     features: [
       "Everything in Growth",
       "Insurance negotiation",
