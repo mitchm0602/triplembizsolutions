@@ -52,6 +52,13 @@ export default function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wide text-steel-light">
               Credentials
             </h3>
+            <Image
+              src="/images/intuit-bookkeeping-badge.png"
+              alt="Intuit Bookkeeping Certified badge"
+              width={56}
+              height={56}
+              className="mt-4 h-14 w-14"
+            />
             <ul className="mt-4 space-y-2">
               {credentials.map((c) => (
                 <li key={c} className="text-sm text-cream/70">

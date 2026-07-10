@@ -18,14 +18,14 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-cream/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 lg:px-8">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2 lg:px-8">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo-transparent.png"
             alt="Triple M Business Solutions"
             width={220}
             height={147}
-            className="h-12 w-auto"
+            className="h-16 w-auto lg:h-20"
             priority
           />
         </Link>

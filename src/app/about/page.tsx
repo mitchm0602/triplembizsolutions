@@ -13,6 +13,7 @@ const credentials = [
     title: "QuickBooks Online Certified",
     description:
       "Certified to set up, clean up, and manage QBO files to a professional standard.",
+    badge: "/images/intuit-bookkeeping-badge.png",
   },
   {
     title: "OSHA 30 Certified",
@@ -137,12 +138,23 @@ export default function AboutPage() {
           {credentials.map((c) => (
             <div
               key={c.title}
-              className="rounded-xl border border-navy/10 bg-mist p-6"
+              className="flex items-start gap-5 rounded-xl border border-navy/10 bg-mist p-6"
             >
-              <h3 className="font-semibold text-navy">{c.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-navy/70">
-                {c.description}
-              </p>
+              {c.badge && (
+                <Image
+                  src={c.badge}
+                  alt={`${c.title} badge`}
+                  width={72}
+                  height={72}
+                  className="h-[72px] w-[72px] flex-shrink-0"
+                />
+              )}
+              <div>
+                <h3 className="font-semibold text-navy">{c.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-navy/70">
+                  {c.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
