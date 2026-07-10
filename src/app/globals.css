@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfbfa;
+  --foreground: #0b2239;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Brand palette sampled from the Triple M logo */
+  --color-navy: #0b2239;
+  --color-navy-light: #14324f;
+  --color-navy-dark: #071626;
+  --color-steel: #537c9d;
+  --color-steel-light: #7fa0bc;
+  --color-steel-dark: #3d5f7a;
+  --color-cream: #fbfbfa;
+  --color-mist: #eef2f5;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
