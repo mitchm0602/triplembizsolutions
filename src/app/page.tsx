@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const credentialBar = [
   "QuickBooks Online Certified",
@@ -61,33 +62,45 @@ export default function Home() {
       {/* Hero */}
       <section className="border-b border-navy/10 bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8 lg:py-28">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-steel-dark">
-              For Construction & Trade Companies
-            </p>
-            <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-navy sm:text-5xl lg:text-6xl">
-              We Build Your Back Office &mdash; So You Can Run the Job.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-navy/70">
-              Triple M Business Solutions is an embedded operations partner
-              for small construction and trade businesses. We set up and run
-              the bookkeeping, HR, compliance, and insurance infrastructure
-              you need &mdash; without the cost of a full internal back
-              office.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="rounded-md bg-navy px-7 py-3.5 text-base font-semibold text-cream transition-colors hover:bg-navy-light"
-              >
-                Book a Consultation
-              </Link>
-              <Link
-                href="/services"
-                className="rounded-md border border-navy/20 px-7 py-3.5 text-base font-semibold text-navy transition-colors hover:bg-mist"
-              >
-                Explore Services
-              </Link>
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-widest text-steel-dark">
+                For Construction & Trade Companies
+              </p>
+              <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-navy sm:text-5xl lg:text-6xl">
+                We Build Your Back Office &mdash; So You Can Run the Job.
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-navy/70">
+                Triple M Business Solutions is an embedded operations partner
+                for small construction and trade businesses. We set up and
+                run the bookkeeping, HR, compliance, and insurance
+                infrastructure you need &mdash; without the cost of a full
+                internal back office.
+              </p>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <Link
+                  href="/contact"
+                  className="rounded-md bg-navy px-7 py-3.5 text-base font-semibold text-cream transition-colors hover:bg-navy-light"
+                >
+                  Book a Consultation
+                </Link>
+                <Link
+                  href="/services"
+                  className="rounded-md border border-navy/20 px-7 py-3.5 text-base font-semibold text-navy transition-colors hover:bg-mist"
+                >
+                  Explore Services
+                </Link>
+              </div>
+            </div>
+            <div className="relative aspect-4/5 overflow-hidden rounded-2xl lg:order-last">
+              <Image
+                src="/images/homepage-hero.jpg"
+                alt="A contractor reviewing project financials on a tablet at a job site"
+                fill
+                priority
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, 100vw"
+              />
             </div>
           </div>
         </div>

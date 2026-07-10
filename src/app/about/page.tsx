@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -45,6 +46,21 @@ export default function AboutPage() {
           <h1 className="mt-4 max-w-2xl text-4xl font-bold tracking-tight text-navy sm:text-5xl">
             Built on the job site. Named for family.
           </h1>
+        </div>
+      </section>
+
+      <section className="border-b border-navy/10 bg-cream pb-16 lg:pb-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="relative aspect-16/9 w-full overflow-hidden rounded-2xl">
+            <Image
+              src="/images/about-hero.jpg"
+              alt="A desk in a construction site office with blueprints and a laptop showing a bookkeeping dashboard"
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+          </div>
         </div>
       </section>
 
