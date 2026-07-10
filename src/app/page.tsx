@@ -38,18 +38,24 @@ const serviceCategories = [
 const engagementSteps = [
   {
     step: "01",
+    title: "Free Consultation",
+    description:
+      "A no-cost intro call to talk through your business and see if Triple M is the right fit — no obligation.",
+  },
+  {
+    step: "02",
     title: "Diagnostic Assessment",
     description:
       "A flat-fee onboarding assessment to evaluate your current systems and compliance exposure before any ongoing commitment.",
   },
   {
-    step: "02",
+    step: "03",
     title: "Right-Sized Engagement",
     description:
       "One-off projects, hourly support, or a monthly retainer — whatever fits where your business is today.",
   },
   {
-    step: "03",
+    step: "04",
     title: "Ongoing Partnership",
     description:
       "Reviewed every 3 months as your business grows, so your back office scales with you instead of holding you back.",
@@ -190,7 +196,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-2 gap-8 md:grid-cols-4">
           {engagementSteps.map((item) => (
             <div key={item.step}>
               <span className="text-sm font-bold text-steel">
