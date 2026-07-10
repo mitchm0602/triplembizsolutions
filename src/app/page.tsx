@@ -82,14 +82,15 @@ export default function Home() {
               For Construction & Trade Companies
             </p>
             <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-cream sm:text-5xl lg:text-6xl">
-              We Build Your Back Office &mdash; So You Can Run the Job.
+              You Run the Job. We&rsquo;ll Run the Back Office.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cream/80">
               Triple M Business Solutions is an embedded operations partner
-              for small construction and trade businesses. We set up and run
-              the bookkeeping, HR, compliance, and insurance infrastructure
-              you need &mdash; without the cost of a full internal back
-              office.
+              for small construction and trade businesses. We can be as
+              hands-on as you need &mdash; from handling the small tasks
+              pulling your attention off the job site to fully running your
+              bookkeeping, HR, compliance, and insurance infrastructure
+              &mdash; without the cost of a full internal back office.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
