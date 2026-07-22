@@ -2,6 +2,8 @@
 
 import { useState, type FormEvent } from "react";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mykrdplj";
+
 const serviceOptions = [
   "Bookkeeping & QBO",
   "HR & Compliance",
@@ -10,15 +12,29 @@ const serviceOptions = [
   "Not sure — help me figure it out",
 ];
 
-export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+type Status = "idle" | "submitting" | "success" | "error";
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+export default function ContactForm() {
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("submitting");
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: new FormData(e.currentTarget),
+        headers: { Accept: "application/json" },
+      });
+
+      setStatus(response.ok ? "success" : "error");
+    } catch {
+      setStatus("error");
+    }
   }
 
-  if (submitted) {
+  if (status === "success") {
     return (
       <div className="rounded-xl border border-steel/30 bg-mist p-10 text-center">
         <h2 className="text-2xl font-bold text-navy">Thank you.</h2>
@@ -140,11 +156,19 @@ export default function ContactForm() {
         />
       </div>
 
+      {status === "error" && (
+        <p className="text-sm font-medium text-red-600">
+          Something went wrong sending your request. Please try again, or
+          email us directly.
+        </p>
+      )}
+
       <button
         type="submit"
-        className="mt-2 w-full rounded-md bg-navy px-7 py-3.5 text-base font-semibold text-cream transition-colors hover:bg-navy-light sm:w-fit"
+        disabled={status === "submitting"}
+        className="mt-2 w-full rounded-md bg-navy px-7 py-3.5 text-base font-semibold text-cream transition-colors hover:bg-navy-light disabled:cursor-not-allowed disabled:opacity-60 sm:w-fit"
       >
-        Request a Consultation
+        {status === "submitting" ? "Sending..." : "Request a Consultation"}
       </button>
     </form>
   );
