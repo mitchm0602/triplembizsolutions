@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const credentials = ["QuickBooks Online Certified", "OSHA 30 Certified"];
+const credentials = [
+  "QuickBooks Online Certified",
+  "QuickBooks ProAdvisor Certified",
+  "OSHA 30 Certified",
+];
 
 const footerLinks = [
   { href: "/", label: "Home" },
@@ -52,13 +56,22 @@ export default function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wide text-steel-light">
               Credentials
             </h3>
-            <Image
-              src="/images/intuit-bookkeeping-badge.png"
-              alt="Intuit Bookkeeping Certified badge"
-              width={56}
-              height={56}
-              className="mt-4 h-14 w-14"
-            />
+            <div className="mt-4 flex gap-3">
+              <Image
+                src="/images/intuit-bookkeeping-badge.png"
+                alt="Intuit Bookkeeping Certified badge"
+                width={56}
+                height={56}
+                className="h-14 w-14"
+              />
+              <Image
+                src="/images/qb-proadvisor-badge.png"
+                alt="Intuit QuickBooks ProAdvisor Certified badge"
+                width={56}
+                height={56}
+                className="h-14 w-14"
+              />
+            </div>
             <ul className="mt-4 space-y-2">
               {credentials.map((c) => (
                 <li key={c} className="text-sm text-cream/70">

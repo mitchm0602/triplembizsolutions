@@ -16,6 +16,12 @@ const credentials = [
     badge: "/images/intuit-bookkeeping-badge.png",
   },
   {
+    title: "QuickBooks ProAdvisor Certified",
+    description:
+      "Level 1 ProAdvisor certification for advanced QuickBooks Online setup, support, and troubleshooting.",
+    badge: "/images/qb-proadvisor-badge.png",
+  },
+  {
     title: "OSHA 30 Certified",
     description:
       "Formal safety training that informs every safety program Triple M builds.",
