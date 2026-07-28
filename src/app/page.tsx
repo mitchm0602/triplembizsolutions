@@ -35,6 +35,20 @@ const serviceCategories = [
   },
 ];
 
+const industriesServed = [
+  "Sole Proprietors",
+  "Commercial General Contractors",
+  "Residential General Contractors",
+  "HVAC",
+  "Electrical",
+  "Plumbing",
+  "Landscaping & Hardscaping",
+  "Roofing",
+  "Concrete & Masonry",
+  "Framing",
+  "Flooring",
+];
+
 const engagementSteps = [
   {
     step: "01",
@@ -185,6 +199,31 @@ export default function Home() {
                   Learn more &rarr;
                 </span>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industries served */}
+      <section className="border-b border-navy/10">
+        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-navy">
+              Industries Served
+            </h2>
+            <p className="mt-4 text-navy/70">
+              Built for construction and trade businesses of every size and
+              specialty.
+            </p>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            {industriesServed.map((industry) => (
+              <span
+                key={industry}
+                className="rounded-full border border-navy/15 bg-mist px-5 py-2 text-sm font-medium text-navy"
+              >
+                {industry}
+              </span>
             ))}
           </div>
         </div>
