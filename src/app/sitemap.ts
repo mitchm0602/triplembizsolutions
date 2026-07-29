@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://triplem-consulting.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/services", "/pricing", "/about", "/contact"];
+  const routes = ["", "/services", "/pricing", "/about", "/faq", "/contact"];
 
   return routes.map((route) => ({
     url: `${BASE_URL}${route}`,

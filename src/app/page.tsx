@@ -49,39 +49,6 @@ const industriesServed = [
   "Flooring",
 ];
 
-const faqs = [
-  {
-    question: "Do you work with sole proprietors, or only larger companies?",
-    answer:
-      "Both. Triple M works with businesses of every size — from sole proprietors just getting their books organized to established general contractors running a full back office.",
-  },
-  {
-    question: "What's a fractional COO, and do I need one?",
-    answer:
-      "A fractional COO handles operations and strategy without a full-time executive salary. Not every business needs that level of involvement — many just need clean books and organized HR systems. Triple M scales to whichever level fits, without pushing you toward more than you need.",
-  },
-  {
-    question: "Are you a CPA or tax accountant?",
-    answer:
-      "No. Triple M is not a CPA or tax accountant. Instead, it works as a liaison to your CPA or tax professional, making sure your books and reporting are always ready when they need them.",
-  },
-  {
-    question: "How much does it cost to get started?",
-    answer:
-      "Every engagement starts with a free consultation, followed by a flat-fee diagnostic assessment that evaluates your current systems before you commit to anything ongoing. Pricing from there depends on what you need — a one-off project, hourly support, or a monthly retainer.",
-  },
-  {
-    question: "What industries do you work with?",
-    answer:
-      "Triple M specializes in construction and trade businesses — general contractors, HVAC, electrical, plumbing, roofing, concrete, and more.",
-  },
-  {
-    question: "What if I already have a bookkeeper or QuickBooks set up?",
-    answer:
-      "That's fine — Triple M can clean up and organize an existing QuickBooks Online file, or build one from scratch if you're starting fresh.",
-  },
-];
-
 const engagementSteps = [
   {
     step: "01",
@@ -344,42 +311,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="border-b border-navy/10 bg-mist">
-        <div className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight text-navy">
-            Frequently Asked Questions
-          </h2>
-          <div className="mt-10 divide-y divide-navy/10">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="py-6">
-                <h3 className="font-semibold text-navy">{faq.question}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-navy/70">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: faqs.map((faq) => ({
-                "@type": "Question",
-                name: faq.question,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: faq.answer,
-                },
-              })),
-            }),
-          }}
-        />
       </section>
 
       {/* Final CTA */}
