@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
+  { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
 ];
 
@@ -31,7 +32,7 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 lg:gap-8 xl:flex">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
@@ -48,7 +49,7 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <Link
             href="/login"
             className="rounded-md border border-navy/20 px-5 py-2.5 text-sm font-semibold text-navy transition-colors hover:bg-mist"
@@ -65,7 +66,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="flex items-center justify-center rounded-md p-2 text-navy md:hidden"
+          className="flex items-center justify-center rounded-md p-2 text-navy xl:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
           aria-expanded={open}
@@ -81,7 +82,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-navy/10 bg-cream md:hidden">
+        <div className="border-t border-navy/10 bg-cream xl:hidden">
           <nav className="flex flex-col gap-1 px-6 py-4">
             {navLinks.map((link) => (
               <Link
