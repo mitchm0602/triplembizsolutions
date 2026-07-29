@@ -34,6 +34,12 @@ export default function Footer() {
               Building and running the back office for small construction and
               trade companies &mdash; so owners can stay focused on the work.
             </p>
+            <a
+              href="tel:+15122700035"
+              className="mt-4 inline-block text-sm font-semibold text-cream/80 transition-colors hover:text-cream"
+            >
+              (512) 270-0035
+            </a>
           </div>
 
           <div>

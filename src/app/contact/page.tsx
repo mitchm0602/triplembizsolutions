@@ -40,6 +40,17 @@ export default function ContactPage() {
                 We&rsquo;ll reach out to schedule your flat-fee diagnostic
                 assessment &mdash; no ongoing commitment required.
               </p>
+              <p>
+                <span className="block font-semibold text-navy">
+                  Prefer to call?
+                </span>
+                <a
+                  href="tel:+15122700035"
+                  className="text-steel-dark hover:text-steel"
+                >
+                  (512) 270-0035
+                </a>
+              </p>
             </div>
           </div>
 
