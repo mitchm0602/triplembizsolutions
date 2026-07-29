@@ -48,7 +48,13 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <Link
+            href="/login"
+            className="rounded-md border border-navy/20 px-5 py-2.5 text-sm font-semibold text-navy transition-colors hover:bg-mist"
+          >
+            Client Portal
+          </Link>
           <Link
             href="/contact"
             className="rounded-md bg-navy px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-navy-light"
@@ -87,6 +93,13 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/login"
+              className="mt-2 rounded-md border border-navy/20 px-5 py-3 text-center text-base font-semibold text-navy"
+              onClick={() => setOpen(false)}
+            >
+              Client Portal
+            </Link>
             <Link
               href="/contact"
               className="mt-2 rounded-md bg-navy px-5 py-3 text-center text-base font-semibold text-cream"
