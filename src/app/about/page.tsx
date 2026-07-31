@@ -22,6 +22,12 @@ const credentials = [
     badge: "/images/qb-proadvisor-badge.png",
   },
   {
+    title: "QuickBooks Payroll Certified",
+    description:
+      "Certified to set up and manage QuickBooks Payroll, so pay runs, tax filings, and compliance stay accurate.",
+    badge: "/images/qb-payroll-badge.png",
+  },
+  {
     title: "OSHA 30 Certified",
     description:
       "Formal safety training that informs every safety program Triple M builds.",

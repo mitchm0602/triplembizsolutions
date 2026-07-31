@@ -4,6 +4,7 @@ import Image from "next/image";
 const credentials = [
   "QuickBooks Online Certified",
   "QuickBooks ProAdvisor Certified",
+  "QuickBooks Payroll Certified",
   "OSHA 30 Certified",
 ];
 
@@ -75,6 +76,13 @@ export default function Footer() {
               <Image
                 src="/images/qb-proadvisor-badge.png"
                 alt="Intuit QuickBooks ProAdvisor Certified badge"
+                width={56}
+                height={56}
+                className="h-14 w-14"
+              />
+              <Image
+                src="/images/qb-payroll-badge.png"
+                alt="Intuit QuickBooks Payroll Certified badge"
                 width={56}
                 height={56}
                 className="h-14 w-14"
